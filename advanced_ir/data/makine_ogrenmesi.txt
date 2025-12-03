@@ -1,0 +1,19 @@
+Makine Öğrenmesi Nedir?
+
+Makine öğrenmesi, yapay zekanın bir alt dalıdır ve bilgisayarların verilerden öğrenmesini sağlar. Bu alanda çalışan sistemler, açıkça programlanmadan belirli görevleri yerine getirebilirler.
+
+Makine öğrenmesi algoritmaları genellikle üç ana kategoriye ayrılır:
+
+1. Denetimli Öğrenme (Supervised Learning): Bu yaklaşım, girdi verileri ve karşılık gelen doğru çıktılarla birlikte verildiğinde bir modelin eğitilmesini içerir. Model, yeni veriler üzerinde doğru tahminler yapmayı öğrenir.
+
+2. Denetimsiz Öğrenme (Unsupervised Learning): Bu yöntemde, model yalnızca girdi verileriyle eğitilir ve verilerdeki örüntüleri veya yapıları kendiliğinden keşfetmeye çalışır.
+
+3. Pekiştirme Öğrenmesi (Reinforcement Learning): Bu yaklaşımda bir ajan, çevresiyle etkileşim kurarak ödül maksimize edecek şekilde öğrenir. Her eylemden sonra pozitif veya negatif bir ödül alır.
+
+Makine öğrenmesi günümüzde pek çok alanda yaygın olarak kullanılmaktadır. Örneğin:
+- E-posta filtreleme sistemleri spam tespiti için makine öğrenmesi kullanır
+- Tavsiye sistemleri kullanıcıların ilgisini çekebilecek ürünleri önermek için bu teknolojiden yararlanır
+- Görüntü tanıma sistemleri tıbbi teşhislerde doktorlara yardımcı olur
+- Finansal kuruluşlar dolandırıcılık tespiti için makine öğrenmesi modelleri geliştirir
+
+Makine öğrenmesinin başarısı büyük ölçüde kullanılan veri kalitesine ve miktarına bağlıdır. Genellikle daha fazla veri, daha iyi model performansı anlamına gelir. Ancak verilerin etiketlenmesi ve ön işleme yapılması da son derece önemlidir.
