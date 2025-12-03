@@ -1,0 +1,21 @@
+Yapay Zeka ve Toplum
+
+Yapay zeka (YZ) teknolojisi hızla gelişmekte ve toplumun birçok alanında hayatımıza girmektedir. Bu teknolojinin hem olumlu hem de olumsuz etkileri bulunmaktadır.
+
+Olumlu Etkiler:
+- Sağlık alanında teşhis ve tedavi süreçlerinin hızlandırılması
+- Eğitimde kişiselleştirilmiş öğrenme deneyimleri
+- Ulaşım sektöründe otonom araçlar sayesinde trafik kazalarının azaltılması
+- Sanayide otomasyon sayesinde verimliliğin artırılması
+- Müşteri hizmetlerinde 7/24 destek sağlanması
+
+Olumsuz Etkiler:
+- Bazı mesleklerin ortadan kalkması ve istihdam sorunları
+- Gizlilik ve güvenlik endişeleri
+- Algoritmik önyargılar ve ayrımcılık riski
+- İnsanlararası iletişimde azalma
+- Teknolojiye aşırı bağımlılık
+
+YZ'nin etik kullanımı konusunda çalışmalar sürmektedir. Birçok kuruluş ve akademisyen, yapay zekanın güvenli ve faydalı bir şekilde geliştirilmesi için rehber ilkeler oluşturmuştur. Bu ilkeler arasında şeffaflık, hesap verilebilirlik, gizlilik ve adil muamele gibi kavramlar yer almaktadır.
+
+Gelecekte yapay zeka teknolojisinin daha da yaygınlaşması beklenmektedir. Bu nedenle toplumun bu gelişmelere hazırlanması ve uyum sağlaması büyük önem taşımaktadır. Eğitim sistemlerinin bu yeni çağa uygun hale getirilmesi, bireylerin dijital okuryazarlıklarının artırılması ve etik çerçevelerin oluşturulması gerekmektedir.

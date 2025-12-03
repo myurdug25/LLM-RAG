@@ -1,0 +1,9 @@
+Yapay zeka, bilgisayarların insan zekasını taklit etmesini sağlayan bir teknoloji dalıdır. Makine öğrenmesi, derin öğrenme ve doğal dil işleme gibi alt dalları içerir.
+
+Makine öğrenmesi, bilgisayarların verilerden öğrenmesini ve bu öğrenilen bilgileri yeni veriler üzerinde tahminler yapmak için kullanmasını sağlar. Bu alanda yaygın olarak kullanılan yöntemler arasında karar ağaçları, destek vektör makineleri ve sinir ağları bulunmaktadır.
+
+Derin öğrenme, makine öğrenmesinin bir alt dalıdır ve yapay sinir ağlarını temel alır. Görüntü tanıma, ses tanıma ve doğal dil işleme gibi karmaşık problemlerde etkili sonuçlar verir.
+
+Doğal dil işleme, bilgisayarların insan dilini anlamasını ve üretmesini sağlar. Bu alan, metin sınıflandırma, duygu analizi, makine çevirisi ve sohbet robotları gibi birçok uygulama alanına sahiptir.
+
+Yapay zeka günümüzde sağlık, finans, ulaşım ve eğlence gibi birçok sektörde yaygın olarak kullanılmaktadır. Örneğin, hastanelerde teşhis destek sistemleri, bankalarda dolandırıcılık tespiti ve otomobil endüstrisinde otonom araçlar gibi uygulamalar geliştirilmiştir.
