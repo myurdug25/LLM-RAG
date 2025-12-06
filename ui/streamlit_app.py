@@ -1,6 +1,13 @@
 import streamlit as st
 import os
-from search_engine import SearchEngine
+import sys
+from pathlib import Path
+
+# Proje root'unu Python path'ine ekle
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
+
+from src.engine import SearchEngine
 import time
 import psutil
 import gc
@@ -263,3 +270,4 @@ st.sidebar.markdown("""
 2. **Index Oluşturma**: Belgelerden vektör index'i oluşturun
 3. **Arama Yapma**: İlgili içerikleri semantik olarak bulun
 """)
+

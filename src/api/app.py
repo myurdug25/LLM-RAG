@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from search_engine import SearchEngine
+from src.engine import SearchEngine
 
 app = FastAPI()
 engine = SearchEngine()
@@ -21,3 +21,4 @@ class Query(BaseModel):
 def search(query: Query):
     results = engine.search(query.text, k=5)
     return {"results": results}
+

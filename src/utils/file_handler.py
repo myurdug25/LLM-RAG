@@ -1,29 +1,38 @@
-from search_engine import SearchEngine
-import os
+"""File handling utilities for document loading."""
 
-def load_documents_from_data_dir():
-    """data dizininden belgeleri yükler"""
+import os
+from pathlib import Path
+
+
+def load_documents_from_data_dir(data_dir="data"):
+    """
+    data dizininden belgeleri yükler
+    
+    Args:
+        data_dir: Belgelerin bulunduğu dizin (varsayılan: "data")
+    
+    Returns:
+        tuple: (documents, doc_names) - Metin listesi ve dosya isimleri listesi
+    """
     documents = []
     doc_names = []
     
     # data dizinini kontrol et ve oluştur
-    if not os.path.exists("data"):
-        os.makedirs("data")
-        print("data dizini oluşturuldu. Belgelerinizi bu dizine ekleyin.")
+    if not os.path.exists(data_dir):
+        os.makedirs(data_dir)
+        print(f"{data_dir} dizini oluşturuldu. Belgelerinizi bu dizine ekleyin.")
         return documents, doc_names
     
     # Dosyaları oku
-    files = os.listdir("data")
+    files = os.listdir(data_dir)
     if not files:
-        print("data dizininde hiç dosya bulunamadı.")
+        print(f"{data_dir} dizininde hiç dosya bulunamadı.")
         return documents, doc_names
     
     print(f"{len(files)} dosya bulundu: {files}")
     
-    engine = SearchEngine()
-    
     for file in files:
-        path = f"data/{file}"
+        path = os.path.join(data_dir, file)
         try:
             if file.endswith(".txt"):
                 with open(path, "r", encoding="utf-8") as f:
@@ -32,10 +41,10 @@ def load_documents_from_data_dir():
                     doc_names.append(file)
                     print(f"✅ {file} dosyası yüklendi. ({len(content)} karakter)")
             elif file.endswith(".pdf"):
-                content = engine.load_pdf(path)
-                documents.append(content)
+                # PDF dosyası - işleme build_index.py'de yapılacak
+                documents.append({"type": "pdf", "path": path})
                 doc_names.append(file)
-                print(f"✅ {file} dosyası yüklendi. ({len(content)} karakter)")
+                print(f"✅ {file} dosyası bulundu (PDF, işleme için hazır).")
             else:
                 print(f"⚠️  {file} dosyası desteklenmiyor (sadece .txt ve .pdf desteklenir)")
         except Exception as e:
@@ -44,12 +53,3 @@ def load_documents_from_data_dir():
     print(f"Toplam {len(documents)} döküman yüklendi.")
     return documents, doc_names
 
-if __name__ == "__main__":
-    documents, doc_names = load_documents_from_data_dir()
-    
-    if documents:
-        engine = SearchEngine()
-        engine.build_index(documents, doc_names)
-        print("Index başarıyla oluşturuldu!")
-    else:
-        print("İşlenecek belge bulunamadı. Önce data dizinine belgelerinizi ekleyin.")

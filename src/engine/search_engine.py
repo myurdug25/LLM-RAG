@@ -101,6 +101,10 @@ class SearchEngine:
             doc_names = [f"Belge_{i+1}" for i in range(len(documents))]
 
         for doc_id, doc in enumerate(documents):
+            # Eğer doc bir dict ise (PDF için), path'ten oku
+            if isinstance(doc, dict) and doc.get("type") == "pdf":
+                doc = self.load_pdf(doc["path"])
+            
             chunks = self.chunk_text(doc)
             doc_hash = hashlib.md5(doc.encode('utf-8')).hexdigest()
             doc_info = {
@@ -389,3 +393,4 @@ class SearchEngine:
         except Exception as e:
             logger.error(f"Soru cevaplama hatası: {str(e)}")
             return f"Cevap bulunamadı. Hata: {str(e)}", 0.0
+
